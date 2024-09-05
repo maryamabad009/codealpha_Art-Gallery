@@ -1,0 +1,155 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background-color: #5f2f2f;
+    color: white;
+    transition: padding 0.3s ease; /* Smooth transition for padding */
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .nav {
+    margin-left: auto; /* Move nav to the right side */
+    transition: transform 0.3s ease; /* Add transition for nav */
+  }
+  
+  .nav.shift-left {
+    transform: translateX(-150px); /* Adjust the amount to shift left */
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    position: relative;
+  }
+  
+  .nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: orange;
+    transition: width 0.3s ease;
+  }
+  
+  .nav a:hover::after,
+  .nav a:focus::after,
+  .nav a:active::after {
+    width: 100%;
+  }
+  
+  .nav a:hover,
+  .nav a:focus,
+  .nav a:active {
+    color: orange;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .search-icon {
+    color: white;
+    cursor: pointer;
+    margin-left: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .search-bar {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) translateX(100%);
+    transition: transform 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .logo {
+    overflow: hidden; /* Prevents overflow if the logo is too large */
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.logo-image {
+    height: 50px; /* Adjust height to make the logo larger */
+    max-height: 100%; /* Prevents exceeding the navbar height */
+    width: auto; /* Maintain aspect ratio */
+}
+
+  
+  .search-bar.show {
+    transform: translateY(-50%) translateX(-15%); /* Slide in left */
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .search-bar input {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: none;
+    font-size: 0.9rem;
+    width: 150px; /* Adjust width as needed */
+  }
+  /* Existing styles remain unchanged */
+
+.hamburger {
+  display: none; /* Hide hamburger by default */
+  cursor: pointer;
+  color: white;
+  font-size: 1.5rem; /* Adjust size as needed */
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none; /* Hide menu by default on smaller screens */
+    flex-direction: column; /* Stack items vertically */
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    right: 0;
+    background-color: #333;
+    z-index: 1000;
+  }
+
+  .nav.open {
+    display: flex; /* Show menu when open */
+  }
+
+  .nav ul {
+    padding: 1rem; /* Add padding for the menu */
+  }
+
+  .nav li {
+    margin: 1rem 0; /* Add space between menu items */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger on smaller screens */
+  }
+  .search-icon {
+    margin-left: 450px; /* Remove margin from search icon */
+  }
+
+}

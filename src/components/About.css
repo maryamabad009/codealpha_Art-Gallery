@@ -1,0 +1,61 @@
+.about-container {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.heading-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.heading-line {
+  flex: 1;
+  height: 2px; /* Thickness of the line */
+  background-color: #ccc; /* Line color */
+  margin: 0 15px; /* Space between line and heading */
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #343a40;
+  text-align: center; /* Center the heading text */
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.introduction {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.introduction h2 {
+  font-size: 2rem;
+  color: #7d8389;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.introduction p {
+  font-size: 1.2rem;
+  color: #495057;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.art-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.art-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: adds rounded corners to the image */
+}
