@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Art-Gallery/static/css/main.f0dd8e99.css",
+    "main.js": "/Art-Gallery/static/js/main.6026a345.js",
+    "static/media/nature.jpg": "/Art-Gallery/static/media/nature.476b293aa037315a00a7.jpg",
+    "static/media/landmark.jpg": "/Art-Gallery/static/media/landmark.ad785c1ff357ba76b912.jpg",
+    "static/media/architecture.jpg": "/Art-Gallery/static/media/architecture.942061f53bcdc94ad9eb.jpg",
+    "static/media/newyork.jpg": "/Art-Gallery/static/media/newyork.1af1072c83b71d73a93d.jpg",
+    "static/media/back-view.jpg": "/Art-Gallery/static/media/back-view.6f604124edcf5aa487f1.jpg",
+    "static/media/animal.jpg": "/Art-Gallery/static/media/animal.8e76838d18bbc67f9979.jpg",
+    "static/media/sunset.jpg": "/Art-Gallery/static/media/sunset.9598189162eb086635dd.jpg",
+    "static/media/background.png": "/Art-Gallery/static/media/background.8346f2ef2737468f0f8d.png",
+    "static/media/logo.png": "/Art-Gallery/static/media/logo.fde0e67303745c5bf728.png",
+    "index.html": "/Art-Gallery/index.html",
+    "main.f0dd8e99.css.map": "/Art-Gallery/static/css/main.f0dd8e99.css.map",
+    "main.6026a345.js.map": "/Art-Gallery/static/js/main.6026a345.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f0dd8e99.css",
+    "static/js/main.6026a345.js"
+  ]
+}
